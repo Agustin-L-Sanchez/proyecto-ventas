@@ -1,42 +1,54 @@
 header {
     display: flex;
-    background-color: red;
-    height: 5rem;
+   flex-direction: row;
+   justify-content: space-evenly;
+    height: 4rem;
     width: 100%;
     padding: 1rem;
+    border: 1px solid #000000;
+    background-color:  gainsboro;
 
 
-.logovalentohheader{
+h1{
     
-    img{
-        height: 10rem;
-    }
+    font-size: 1.5rem;
 }
 
 
 
     ul {
         display: flex;
-        gap: 2rem;
+        gap: 8rem;
         list-style-type: none;
-        background-color: violet;
         width: 100%;
         height: 100%;
         justify-content: right;
 
 
         li {
-            display: inline;
+            display: flex;
+            align-items: center;
+            justify-content:center;
             height: 100%;
-            width: 100%;
+            width: 10rem;
+            font-size: 1.5rem;
+            
 
         }
 
 
     }
 
-
-
+:hover .inicio{
+    color: black;
+    background-color:  rgb(225, 213, 141);
+    border: 1px solid black;
+    border-radius: 10rem;
+    
+    
+   
+    
+}
 
 
 }
