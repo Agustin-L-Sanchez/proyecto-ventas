@@ -1,54 +1,76 @@
-header {
-    display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-    height: 4rem;
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #000000;
-    background-color:  gainsboro;
+@media (min-width:320px) {
 
+    header {
 
-h1{
-    
-    font-size: 1.5rem;
-}
-
-
-
-    ul {
         display: flex;
-        gap: 8rem;
-        list-style-type: none;
+        flex-direction: column;
         width: 100%;
-        height: 100%;
-        justify-content: right;
+        height: 12rem;
+        background-color: gainsboro;
 
 
-        li {
+
+        .imagenlogo {
+            width: 100%;
+            height: 3rem;
             display: flex;
-            align-items: center;
-            justify-content:center;
-            height: 100%;
-            width: 10rem;
-            font-size: 1.5rem;
-            
+            justify-content: center;
 
+            img {
+                width: 8rem;
+                height: 3rem;
+            }
         }
 
 
+        nav {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            margin-top: 1rem;
+
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style-type: none;
+                gap: 1rem;
+                width: 100%;
+                height: 100%;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    width: 7rem;
+                    height: 100%;
+                    font-size: 1rem;
+                    border-radius: 5%;
+
+                }
+            }
+        }
     }
 
-:hover .inicio{
-    color: black;
-    background-color:  rgb(225, 213, 141);
-    border: 1px solid black;
-    border-radius: 10rem;
-    
-    
-   
-    
-}
+    nav .inicio:hover {
+        border: 1px solid black;
+        background-color: cadetblue
+    }
+
+    nav .nosotros:hover {
+        border: 1px solid black;
+        background-color: cadetblue
+    }
+
+    nav .catalogo:hover {
+        border: 1px solid black;
+        background-color: cadetblue
+    }
+
+    nav .contacto:hover {
+        border: 1px solid black;
+        background-color: cadetblue
+    }
 
 
 }
